@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "inlineSources": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    //    "lib": ["es2015", "dom"],
+    "noImplicitAny": true,
+    "watch": true
+    //    "suppressImplicitAnyIndexErrors": true,
+    //    "typeRoots": [
+    //      "../../node_modules/@types/"
+    //    ]
+  },
+  "compileOnSave": true,
+    "exclude": [
+      "node_modules"
+    ]
+  //  "files": [
+  //    "./app/app.component.ts",
+  //    "./app/app.module.ts",
+  //    "./app/child.component.ts",
+  //    "./app/data.service.ts",
+  //    "./app/form.component.ts",
+  //    "./app/main.ts"
+  //  ]
+}
