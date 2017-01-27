@@ -1,0 +1,11 @@
+<div *ngIf="loading">loading...</div>
+<div class="container-category">
+  <div *ngFor="let item of data" class="category">
+    <div (click)="openCategory(item.name)">{{item.name}}
+    </div>
+  </div>
+</div>
+<div *ngIf="activeCategory">
+  <child [activeCategory]="activeCategory"></child>
+</div>
+

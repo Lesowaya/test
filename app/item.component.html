@@ -1,0 +1,7 @@
+<div class="container-items">
+  <div *ngFor="let item of data" class="item">
+    <img [src]="item.image[0]">
+    <h3>{{item.name}}</h3>
+    <h5>Brand: {{item.brand}} | Year: {{item.year}}</h5>
+  </div>
+</div>

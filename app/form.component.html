@@ -1,0 +1,43 @@
+<div class="container-params">
+  <form #f="ngForm" (keyup)="onKey(f.value)"
+        (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input type="text"
+           id="name"
+           placeholder="Lenovo"
+           name="name" ngModel>
+    <label for="brand">Brand:</label>
+    <input type="text"
+           id="brand"
+           placeholder="Lenovo"
+           name="brand" ngModel>
+    <label for="year">Year:</label>
+    <input type="number"
+           id="year"
+           min="2000"
+           max="2017"
+           placeholder="2012"
+           name="year" ngModel>
+    <br>
+    <label for="cost-min">Cost more then:</label>
+    <input type="range" id="cost-min" min="0" value="costMin" max="200000" step="10" name="costMin" ngModel>
+    {{costMin}}
+
+    <label for="cost-max">Cost less then:</label>
+    <input type="range" id="cost-max" min="0" value="costMin" max="200000" step="10" name="costMax" ngModel>
+    {{costMax}}
+  </form>
+
+  <!--<form [formGroup]="myForm"-->
+    <!--(ngSubmit)="onSubmit(myForm.value)">-->
+    <!--<label>Name:</label>-->
+    <!--<input type="text"-->
+           <!--placeholder="Alice"-->
+           <!--[formControl]="myForm.controls['name']">-->
+    <!--<div *ngIf="!myForm.controls['name'].valid">SKU is invalid</div>-->
+    <!--<div *ngIf="myForm.controls['name'].hasError('required')">SKU is required</div>-->
+    <!--<div *ngIf="myForm.controls['name'].hasError('invalidName')">SKU must begin with <span>Al</span></div>-->
+    <!--<br>-->
+    <!--<button type="submit">Submit</button>-->
+  <!--</form>-->
+</div>
